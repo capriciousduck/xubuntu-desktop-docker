@@ -4,7 +4,7 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y xubuntu-desktop tightvncserver
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y xubuntu-desktop --no-install-recommends && apt-get install -y tightvncserver
 RUN rm -rf /var/lib/apt/lists/*
 
 # Define working directory.
