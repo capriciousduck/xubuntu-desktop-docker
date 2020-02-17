@@ -1,0 +1,5 @@
+docker run -d --name Desktop --restart unless-stopped \
+-v /mnt/WD80:/mnt/WD80 \
+-v /mnt/AD80:/mnt/AD80 \
+--net=host \
+capriciousduck/xubuntu-desktop
