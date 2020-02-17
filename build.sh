@@ -1,1 +1,1 @@
-docker build -t xubuntu-desktop .
+docker build -t capriciousduck/xubuntu-desktop .
